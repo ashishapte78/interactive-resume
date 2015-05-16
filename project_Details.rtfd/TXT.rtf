@@ -1,0 +1,267 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 LucidaGrande;
+\f3\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red38\green98\blue135;\red255\green255\blue255;\red36\green36\blue36;
+\red23\green135\blue182;\red240\green240\blue240;\red38\green38\blue38;\red242\green242\blue242;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid201\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid202\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19260\viewh9300\viewkind0
+\deftab720
+\pard\pardeftab720\sl700\sa230
+
+\f0\b\fs44 \cf2 \cb3 How do I complete this project?\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl460
+\ls1\ilvl0
+\b0\fs28 \cf4 {\listtext	1.	}If you need a refresher on JavaScript syntax, go to the {\field{\*\fldinst{HYPERLINK "https://www.udacity.com/course/viewer#!/c-ud804-nd"}}{\fldrslt \cf5 Javascript Basics course}}; if you would like to understand how this project is manipulating and traversing the DOM, check out {\field{\*\fldinst{HYPERLINK "https://www.udacity.com/course/ud245-nd"}}{\fldrslt \cf5 Intro to jQuery}}.\
+{\listtext	2.	}Go through the videos and assignments in this course to learn the JavaScript necessary to build your resume.\
+{\listtext	3.	}Read all the project details outlined below and make sure you understand each part. If you are unsure of anything please check with your cohort or private message your cohorts coaches.\
+{\listtext	4.	}Fork the project repo from {\field{\*\fldinst{HYPERLINK "https://github.com/udacity/frontend-nanodegree-resume"}}{\fldrslt 
+\b \cf5 Github}} and begin building you resume.\
+{\listtext	5.	}Review your work against the Project Rubric (on the next page).\
+{\listtext	6.	}When you are satisfied with your project, submit it according to the Submission Instructions on the next page.\
+\pard\pardeftab720\sl560\sa230
+
+\b\fs36 \cf4 By the end:\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 Your resume will look something like this \
+\
+\
+And your repository will include the following files:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl460
+\ls2\ilvl0
+\b \cf4 {\listtext	\'95	}index.html
+\b0 : The main HTML document. Contains links to all of the CSS and JS resources needed to render the resume, including resumeBuilder.js.\
+\ls2\ilvl0
+\b {\listtext	\'95	}js/helper.js
+\b0 : Contains helper code needed to format the resume and build the map. It also has a few function shells for additional functionality. More on helper.js further down.\
+\ls2\ilvl0
+\b {\listtext	\'95	}js/resumeBuilder.js
+\b0 : This file is empty. You should write your code here.\
+\ls2\ilvl0
+\b {\listtext	\'95	}js/jQuery.js
+\b0 : The jQuery library.\
+\ls2\ilvl0
+\b {\listtext	\'95	}css/style.css
+\b0 : Contains all of the CSS needed to style the page.\
+\ls2\ilvl0
+\b {\listtext	\'95	}README.md
+\b0 : The GitHub readme file.\
+{\listtext	\'95	}and some images in the images directory.\
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 Your starting point...\
+\pard\pardeftab720\sl560\sa230
+
+\fs36 \cf4 js/helper.js\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 Within helper.js, you\'92ll find a large collection of strings containing snippets of HTML. Within many snippets, you\'92ll find placeholder data in the form of 
+\f1\fs26 \cb6 %data%
+\f0\fs28 \cb3  or 
+\f1\fs26 \cb6 %contact%
+\f0\fs28 \cb3 .\
+Each string has a title that describes how it should be used. For instance, 
+\f1\fs26 \cb6 HTMLworkStart
+\f0\fs28 \cb3  should be the first 
+\f1\fs26 \cb6 <div>
+\f0\fs28 \cb3  in the Work section of the resume. 
+\f1\fs26 \cb6 HTMLschoolLocation
+\f0\fs28 \cb3  contains a 
+\f1\fs26 \cb6 %data%
+\f0\fs28 \cb3 placeholder which should be replaced with the location of one of your schools.\
+\pard\pardeftab720\sl560\sa230
+
+\b\fs36 \cf4 Your process:\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 The resume has four distinct sections: work, education, projects and a header with biographical information. You\'92ll need to:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl460\sa300
+\ls3\ilvl0\cf4 {\listtext	1.	}Build four JSONs, each one representing a different resume section, The objects that you create need to follow the names within the schema exactly:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460\sa300
+\ls3\ilvl1
+\f1\fs26 \cf4 \cb6 {\listtext	\uc0\u9702 	}bio
+\f0\fs28 \cb3  contains:\uc0\u8232 
+\f1\fs26 \cf7 \cb8 name : string\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls3\ilvl1\cf7 {\listtext	\uc0\u9702 	}role : string\
+{\listtext	\uc0\u9702 	}contacts : an object with\
+{\listtext	\uc0\u9702 	}      mobile: string\
+{\listtext	\uc0\u9702 	}      email: string \
+{\listtext	\uc0\u9702 	}      github: string\
+{\listtext	\uc0\u9702 	}      twitter: string \
+{\listtext	\uc0\u9702 	}      location: string\
+{\listtext	\uc0\u9702 	}welcomeMessage: string \
+{\listtext	\uc0\u9702 	}skills: array of strings\
+{\listtext	\uc0\u9702 	}biopic: url\
+{\listtext	\uc0\u9702 	}display: function\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460
+\ls3\ilvl1
+\f0\fs28 \cf4 \cb3 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460\sa300
+\ls3\ilvl1
+\f1\fs26 \cf4 \cb6 {\listtext	\uc0\u9702 	}education
+\f0\fs28 \cb3  contains:\uc0\u8232 
+\f1\fs26 \cf7 \cb8 schools: array of objects with\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls3\ilvl1\cf7 {\listtext	\uc0\u9702 	}     name: string\
+{\listtext	\uc0\u9702 	}     location: string\
+{\listtext	\uc0\u9702 	}     degree: string\
+{\listtext	\uc0\u9702 	}     majors: array of strings\
+{\listtext	\uc0\u9702 	}     dates: integer (graduation date)\
+{\listtext	\uc0\u9702 	}     url: string\
+{\listtext	\uc0\u9702 	}onlineCourses: array with\
+{\listtext	\uc0\u9702 	}     title: string\
+{\listtext	\uc0\u9702 	}     school: string\
+{\listtext	\uc0\u9702 	}     date: integer (date finished)\
+{\listtext	\uc0\u9702 	}     url: string\
+{\listtext	\uc0\u9702 	}display: function\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460
+\ls3\ilvl1
+\f0\fs28 \cf4 \cb3 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460\sa300
+\ls3\ilvl1
+\f1\fs26 \cf4 \cb6 {\listtext	\uc0\u9702 	}work
+\f0\fs28 \cb3  contains\uc0\u8232 
+\f1\fs26 \cf7 \cb8 jobs: array of objects with\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls3\ilvl1\cf7 {\listtext	\uc0\u9702 	}     employer: string \
+{\listtext	\uc0\u9702 	}     title: string \
+{\listtext	\uc0\u9702 	}     location: string \
+{\listtext	\uc0\u9702 	}     dates: string (works with a hyphen between them)\
+{\listtext	\uc0\u9702 	}     description: string \
+{\listtext	\uc0\u9702 	}display: function\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460
+\ls3\ilvl1
+\f0\fs28 \cf4 \cb3 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460\sa300
+\ls3\ilvl1
+\f1\fs26 \cf4 \cb6 {\listtext	\uc0\u9702 	}projects
+\f0\fs28 \cb3  contains:\uc0\u8232 
+\f1\fs26 \cf7 \cb8 projects: array of objects with\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl440
+\ls3\ilvl1\cf7 {\listtext	\uc0\u9702 	}      title: string \
+{\listtext	\uc0\u9702 	}      dates: string (works with a hyphen between them)\
+{\listtext	\uc0\u9702 	}      description: string\
+{\listtext	\uc0\u9702 	}      images: array with string urls\
+{\listtext	\uc0\u9702 	}display: function\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460
+\ls3\ilvl1
+\f0\fs28 \cf4 \cb3 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl460\sa300
+\ls3\ilvl0\cf4 {\listtext	2.	}Iterate through each JSON and append its information to index.html in the correct section.\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\sl460
+\ls3\ilvl1\cf4 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}First off, you\'92ll be using jQuery\'92s 
+\f1\fs26 \cb6 selector.append()
+\f0\fs28 \cb3  and 
+\f1\fs26 \cb6 selector.prepend()
+\f0\fs28 \cb3  functions to modify index.html. 
+\f1\fs26 \cb6 selector.append()
+\f0\fs28 \cb3  makes an element appear at the end of a selected section. 
+\f1\fs26 \cb6 selector.prepend()
+\f0\fs28 \cb3  makes an element appear at the beginning of a selected section.\
+{\listtext	
+\f2 \uc0\u9702 
+\f0 	}Pay close attention to the ids of the 
+\f1\fs26 \cb6 <div>
+\f0\fs28 \cb3 s in index.html and the HTML snippets in helper.js. They\'92ll be very useful as jQuery selectors for 
+\f1\fs26 \cb6 selector.append()
+\f0\fs28 \cb3  and
+\f1\fs26 \cb6 selector.prepend()
+\f0\fs28 \cb3 \
+{\listtext	
+\f2 \uc0\u9702 
+\f0 	}You\'92ll also be using the JavaScript method 
+\f1\fs26 \cb6 string.replace(old, new)
+\f0\fs28 \cb3  to swap out all the placeholder text (e.g. 
+\f1\fs26 \cb6 %data%
+\f0\fs28 \cb3 ) for data from your resume JSONs.\
+{\listtext	
+\f2 \uc0\u9702 
+\f0 	}Here\'92s an example of some code that would add the location of one your companies to the page:\
+\ls3\ilvl1
+\f1\fs26 \cb6 {\listtext	\uc0\u9702 	}var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+\f0\fs28 \cb3 \
+\ls3\ilvl1
+\f1\fs26 \cb6 {\listtext	\uc0\u9702 	}$(".work-entry:last").append(formattedLocation);
+\f0\fs28 \cb3 \
+{\listtext	
+\f2 \uc0\u9702 
+\f0 	}Use the mockup at the bottom of this document as a guide for the order in which you should append elements to the page.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl460
+\ls3\ilvl0\cf4 {\listtext	3.	}The resume includes an interactive map. To add it, append the googleMap string to
+\f1\fs26 \cb6 <div id=\'94mapDiv\'94>
+\f0\fs28 \cb3 .\
+{\listtext	4.	}All of your code for adding elements to the resume should be within functions. And all of your functions should be encapsulated within the same objects containing your resume data. For instance, your functions for appending work experience elements to the page should be found within the same object containing data about your work experience.\
+{\listtext	5.	}Your resume should also 
+\f1\fs26 \cb6 console.log()
+\f0\fs28 \cb3  information about click locations. On line 90 in helper.js, you\'92ll find a jQuery onclick handler that you\'92ll need to modify to work with the
+\f1\fs26 \cb6 logClicks(x,y)
+\f0\fs28 \cb3  function above it.\
+{\listtext	6.	}It\'92s possible to make additional information show up when you click on the pins in the map. Check out line 174 in helper.js and the Google Maps API to get started.\
+{\listtext	7.	}\
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 Evaluation\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 Your project will be evaluated by a Udacity reviewer according to the rubric below. Be sure to review it thoroughly before you submit. All criteria must "meet specifications" in order to pass. 
+\f3\fs24 \cf0 
+\f0\fs28 \cf4 \
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 Submission\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 When you're ready to submit your project go back to your {\field{\*\fldinst{HYPERLINK "https://www.udacity.com/course/nd001"}}{\fldrslt \cf5 Nanodegree Portal}}, click on Project 2, and we'll walk you through the rest of the submission process.\
+If you are having any problems submitting your project or wish to check on the status of your submission, please email us at 
+\b frontend-project@udacity.com
+\b0  or visit us in the {\field{\*\fldinst{HYPERLINK "http://discussions.udacity.com/"}}{\fldrslt \cf5 discussion forums}}.\
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 What's Next?\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 You will get an email as soon as your reviewer has feedback for you. This could take up to two weeks, but in most cases is much faster. In the meantime, review your next project and feel free to get started on it or the courses supporting it!\
+\pard\tx566\pardeftab720\sl460
+\cf4 \
+\
+\
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 Evaluation\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 Your project will be evaluated by a Udacity reviewer according to the rubric below. Be sure to review it thoroughly before you submit. All criteria must "meet specifications" in order to pass. 
+\f3\fs24 \cf0 
+\f0\fs28 \cf4 \
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 Submission\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 When you're ready to submit your project go back to your {\field{\*\fldinst{HYPERLINK "https://www.udacity.com/course/nd001"}}{\fldrslt \cf5 Nanodegree Portal}}, click on Project 2, and we'll walk you through the rest of the submission process.\
+If you are having any problems submitting your project or wish to check on the status of your submission, please email us at 
+\b frontend-project@udacity.com
+\b0  or visit us in the {\field{\*\fldinst{HYPERLINK "http://discussions.udacity.com/"}}{\fldrslt \cf5 discussion forums}}.\
+\pard\pardeftab720\sl700\sa230
+
+\b\fs44 \cf2 What's Next?\
+\pard\pardeftab720\sl460\sa300
+
+\b0\fs28 \cf4 You will get an email as soon as your reviewer has feedback for you. This could take up to two weeks, but in most cases is much faster. In the meantime, review your next project and feel free to get started on it or the courses supporting it!\
+\pard\tx566\pardeftab720\sl460
+\cf4 \
+}
